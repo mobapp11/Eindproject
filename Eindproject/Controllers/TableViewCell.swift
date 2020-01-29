@@ -12,7 +12,7 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var podiumLbl: UILabel!
     @IBOutlet weak var hourLbl: UILabel!
-    @IBOutlet weak var detailBtn: UIButton!
+   
     
     override func awakeFromNib() {
         super.awakeFromNib()

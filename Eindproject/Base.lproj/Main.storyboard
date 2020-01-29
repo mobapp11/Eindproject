@@ -42,22 +42,14 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Podium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y00-kA-CBQ">
-                                                    <rect key="frame" x="166" y="14" width="83" height="21"/>
+                                                    <rect key="frame" x="311" y="11" width="83" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6iG-AS-cb4">
-                                                    <rect key="frame" x="292" y="11" width="114" height="53"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Details"/>
-                                                    <connections>
-                                                        <segue destination="dUT-X6-GpT" kind="show" id="5hQ-87-oCP"/>
-                                                    </connections>
-                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Lh-CM-HAT">
-                                                    <rect key="frame" x="166" y="43" width="83" height="21"/>
+                                                    <rect key="frame" x="311" y="43" width="83" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -66,10 +58,10 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="detailBtn" destination="6iG-AS-cb4" id="1AU-XO-o84"/>
                                             <outlet property="hourLbl" destination="8Lh-CM-HAT" id="S5t-AS-HKk"/>
                                             <outlet property="nameLbl" destination="svK-15-wD1" id="Aft-5y-qHQ"/>
                                             <outlet property="podiumLbl" destination="y00-kA-CBQ" id="I6y-mX-Em3"/>
+                                            <segue destination="dUT-X6-GpT" kind="show" identifier="detailSegue" id="Sh3-WI-x3P"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -84,7 +76,7 @@
                     <tabBarItem key="tabBarItem" title="Artists" image="music.mic" catalog="system" selectedImage="music.mic" id="bVM-3z-BvV" userLabel="Artists"/>
                     <navigationItem key="navigationItem" id="253-Po-TCL"/>
                     <connections>
-                        <outlet property="tableview" destination="gAc-cO-tao" id="Db6-J6-EW5"/>
+                        <outlet property="tableView" destination="gAc-cO-tao" id="Kkn-or-HCL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -129,6 +121,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="seX-zm-uoR">
+                                <rect key="frame" x="20" y="200" width="25" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="02R-Lq-pLh"/>
@@ -145,7 +144,7 @@
             </objects>
             <point key="canvasLocation" x="2069.5652173913045" y="-310.04464285714283"/>
         </scene>
-        <!--Item 2-->
+        <!--About us-->
         <scene sceneID="wS9-7h-u9c">
             <objects>
                 <viewController id="arI-wK-wRe" sceneMemberID="viewController">
@@ -173,7 +172,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="sOQ-tE-9UV"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Mml-xd-3u6"/>
+                    <tabBarItem key="tabBarItem" title="About us" image="info.circle" catalog="system" selectedImage="info.circle" id="Mml-xd-3u6"/>
                     <navigationItem key="navigationItem" id="Gz2-w1-IdG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kz3-yp-pK0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -193,11 +192,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Nq3-57-I16">
-                                <rect key="frame" x="142" y="93" width="131" height="31"/>
+                                <rect key="frame" x="132" y="93" width="151" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
+                                    <segment title="Standard"/>
+                                    <segment title="Sattelite"/>
                                 </segments>
                                 <connections>
                                     <action selector="changeMapType:" destination="q7j-HG-81G" eventType="valueChanged" id="roQ-gU-wxp"/>
@@ -244,6 +243,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="info.circle" catalog="system" width="64" height="60"/>
         <image name="magnifyingglass" catalog="system" width="64" height="56"/>
         <image name="music.mic" catalog="system" width="64" height="58"/>
     </resources>

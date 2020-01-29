@@ -12,7 +12,7 @@ class ArtistViewController: UIViewController, UITableViewDataSource{
     
     
   
-    @IBOutlet weak var tableview: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     let rijen:DatasourceArtiesten = DatasourceArtiesten.init()
     
     override func viewDidLoad() {
@@ -40,6 +40,17 @@ class ArtistViewController: UIViewController, UITableViewDataSource{
         
         return currentCell
     }
+    
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "detailSegue"{
+                let selectedIndexPath:IndexPath = tableView.indexPath(for: sender as! TableViewCell)!
+                let selectedArtist = rijen.artists[selectedIndexPath.row]
+                let destinationVC:DetailViewController = segue.destination as! DetailViewController
+                destinationVC.selectedArtist = selectedArtist
+            }
+        }
+        
+    }
         
     
 
@@ -53,4 +64,4 @@ class ArtistViewController: UIViewController, UITableViewDataSource{
     }
     */
 
-}
+
