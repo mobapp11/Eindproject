@@ -9,7 +9,7 @@
 import Foundation
 import MapKit
 
-class DatasouceMap {
+class DatasourceMap {
    
     var items:[POI]
     

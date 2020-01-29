@@ -13,12 +13,12 @@ class MapViewController: UIViewController {
 
     @IBOutlet weak var mapview: MKMapView!
     let locationManager = CLLocationManager.init()
-    var data:DatasouceMap?
+    var data:DatasourceMap?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        data = DatasouceMap.init()
+        data = DatasourceMap.init()
         mapview.addAnnotations(data!.items)
     }
     

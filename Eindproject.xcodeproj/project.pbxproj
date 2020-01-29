@@ -15,6 +15,11 @@
 		39E5CC3223E179D2001B9623 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39E5CC3023E179D2001B9623 /* LaunchScreen.storyboard */; };
 		39E5CC3C23E18474001B9623 /* POI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E5CC3B23E18474001B9623 /* POI.swift */; };
 		39E5CC3E23E18499001B9623 /* DatasourceMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E5CC3D23E18499001B9623 /* DatasourceMap.swift */; };
+		39E5CC4023E19273001B9623 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E5CC3F23E19273001B9623 /* Artist.swift */; };
+		39E5CC4223E19914001B9623 /* DatasourceArtiesten.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E5CC4123E19914001B9623 /* DatasourceArtiesten.swift */; };
+		39E5CC4423E19BBE001B9623 /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E5CC4323E19BBE001B9623 /* ArtistViewController.swift */; };
+		39E5CC4623E19BF2001B9623 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E5CC4523E19BF2001B9623 /* TableViewCell.swift */; };
+		39E5CC4823E19C1D001B9623 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E5CC4723E19C1D001B9623 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		39E5CC3323E179D2001B9623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39E5CC3B23E18474001B9623 /* POI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POI.swift; sourceTree = "<group>"; };
 		39E5CC3D23E18499001B9623 /* DatasourceMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasourceMap.swift; sourceTree = "<group>"; };
+		39E5CC3F23E19273001B9623 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		39E5CC4123E19914001B9623 /* DatasourceArtiesten.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasourceArtiesten.swift; sourceTree = "<group>"; };
+		39E5CC4323E19BBE001B9623 /* ArtistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; };
+		39E5CC4523E19BF2001B9623 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		39E5CC4723E19C1D001B9623 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +87,8 @@
 			children = (
 				39E5CC3B23E18474001B9623 /* POI.swift */,
 				39E5CC3D23E18499001B9623 /* DatasourceMap.swift */,
+				39E5CC3F23E19273001B9623 /* Artist.swift */,
+				39E5CC4123E19914001B9623 /* DatasourceArtiesten.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -85,6 +97,9 @@
 			isa = PBXGroup;
 			children = (
 				39E5CC2923E179D0001B9623 /* MapViewController.swift */,
+				39E5CC4323E19BBE001B9623 /* ArtistViewController.swift */,
+				39E5CC4523E19BF2001B9623 /* TableViewCell.swift */,
+				39E5CC4723E19C1D001B9623 /* DetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -160,9 +175,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39E5CC4223E19914001B9623 /* DatasourceArtiesten.swift in Sources */,
+				39E5CC4023E19273001B9623 /* Artist.swift in Sources */,
 				39E5CC3E23E18499001B9623 /* DatasourceMap.swift in Sources */,
+				39E5CC4623E19BF2001B9623 /* TableViewCell.swift in Sources */,
+				39E5CC4423E19BBE001B9623 /* ArtistViewController.swift in Sources */,
 				39E5CC3C23E18474001B9623 /* POI.swift in Sources */,
 				39E5CC2A23E179D0001B9623 /* MapViewController.swift in Sources */,
+				39E5CC4823E19C1D001B9623 /* DetailViewController.swift in Sources */,
 				39E5CC2623E179D0001B9623 /* AppDelegate.swift in Sources */,
 				39E5CC2823E179D0001B9623 /* SceneDelegate.swift in Sources */,
 			);
