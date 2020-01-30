@@ -35,5 +35,5 @@ class DatasourceArtiesten {
         artists.append(Artist.init(name: "Taylor Swimt", podium: "Salt Stage", hour: "16.30", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur molestie ut tortor eget mattis. Sed volutpat tristique ligula, elementum condimentum quam aliquam ut. In metus enim, vehicula quis felis in, lobortis aliquam tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur nulla justo, faucibus lobortis tristique a, tincidunt in leo. In dignissim tortor sit amet viverra aliquet. Aenean non aliquet lectus, id consequat felis. Duis sed molestie diam. Mauris efficitur lectus in leo vulputate placerat. Ut ut viverra nisl. Quisque dictum velit enim, a cursus diam tincidunt eu. Nam commodo non odio interdum finibus. "
              ))
         
- 
+       
     }}

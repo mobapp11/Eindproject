@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3954F4F123E30EFF005B5616 /* DatasourceFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3954F4F023E30EFF005B5616 /* DatasourceFeed.swift */; };
+		3954F4F323E30F38005B5616 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3954F4F223E30F38005B5616 /* Feed.swift */; };
+		3954F4F823E31995005B5616 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3954F4F723E31995005B5616 /* FeedViewController.swift */; };
+		3954F4FA23E31BCF005B5616 /* FeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3954F4F923E31BCF005B5616 /* FeedCollectionViewCell.swift */; };
 		39E5CC2623E179D0001B9623 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E5CC2523E179D0001B9623 /* AppDelegate.swift */; };
 		39E5CC2823E179D0001B9623 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E5CC2723E179D0001B9623 /* SceneDelegate.swift */; };
 		39E5CC2A23E179D0001B9623 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E5CC2923E179D0001B9623 /* MapViewController.swift */; };
@@ -23,6 +27,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3954F4F023E30EFF005B5616 /* DatasourceFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasourceFeed.swift; sourceTree = "<group>"; };
+		3954F4F223E30F38005B5616 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		3954F4F623E3177A005B5616 /* vis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vis.jpg; sourceTree = "<group>"; };
+		3954F4F723E31995005B5616 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		3954F4F923E31BCF005B5616 /* FeedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCollectionViewCell.swift; sourceTree = "<group>"; };
 		39E5CC2223E179D0001B9623 /* Eindproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eindproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39E5CC2523E179D0001B9623 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39E5CC2723E179D0001B9623 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +79,7 @@
 		39E5CC2423E179D0001B9623 /* Eindproject */ = {
 			isa = PBXGroup;
 			children = (
+				3954F4F623E3177A005B5616 /* vis.jpg */,
 				39E5CC3A23E17A5B001B9623 /* Controllers */,
 				39E5CC3923E17A4C001B9623 /* Model */,
 				39E5CC2523E179D0001B9623 /* AppDelegate.swift */,
@@ -89,6 +99,8 @@
 				39E5CC3D23E18499001B9623 /* DatasourceMap.swift */,
 				39E5CC3F23E19273001B9623 /* Artist.swift */,
 				39E5CC4123E19914001B9623 /* DatasourceArtiesten.swift */,
+				3954F4F223E30F38005B5616 /* Feed.swift */,
+				3954F4F023E30EFF005B5616 /* DatasourceFeed.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -100,6 +112,8 @@
 				39E5CC4323E19BBE001B9623 /* ArtistViewController.swift */,
 				39E5CC4523E19BF2001B9623 /* TableViewCell.swift */,
 				39E5CC4723E19C1D001B9623 /* DetailViewController.swift */,
+				3954F4F723E31995005B5616 /* FeedViewController.swift */,
+				3954F4F923E31BCF005B5616 /* FeedCollectionViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -176,14 +190,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				39E5CC4223E19914001B9623 /* DatasourceArtiesten.swift in Sources */,
+				3954F4F323E30F38005B5616 /* Feed.swift in Sources */,
 				39E5CC4023E19273001B9623 /* Artist.swift in Sources */,
 				39E5CC3E23E18499001B9623 /* DatasourceMap.swift in Sources */,
 				39E5CC4623E19BF2001B9623 /* TableViewCell.swift in Sources */,
+				3954F4F123E30EFF005B5616 /* DatasourceFeed.swift in Sources */,
 				39E5CC4423E19BBE001B9623 /* ArtistViewController.swift in Sources */,
 				39E5CC3C23E18474001B9623 /* POI.swift in Sources */,
 				39E5CC2A23E179D0001B9623 /* MapViewController.swift in Sources */,
 				39E5CC4823E19C1D001B9623 /* DetailViewController.swift in Sources */,
 				39E5CC2623E179D0001B9623 /* AppDelegate.swift in Sources */,
+				3954F4F823E31995005B5616 /* FeedViewController.swift in Sources */,
+				3954F4FA23E31BCF005B5616 /* FeedCollectionViewCell.swift in Sources */,
 				39E5CC2823E179D0001B9623 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

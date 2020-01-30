@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -26,14 +27,9 @@
                                 <rect key="frame" x="0.0" y="80" width="414" height="733"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <searchBar key="tableHeaderView" contentMode="redraw" id="yZn-SD-bli">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                </searchBar>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="75" id="MLv-ju-Ria" customClass="TableViewCell" customModule="Eindproject" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="72" width="414" height="75"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MLv-ju-Ria" id="YRm-pM-blD">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
@@ -130,7 +126,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fiD-SN-2vo">
                                 <rect key="frame" x="20" y="276" width="374" height="490"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -222,6 +218,82 @@
             </objects>
             <point key="canvasLocation" x="1160.8695652173915" y="429.91071428571428"/>
         </scene>
+        <!--Feed-->
+        <scene sceneID="fMq-MC-8rm">
+            <objects>
+                <viewController id="DUO-4t-G9b" customClass="FeedViewController" customModule="Eindproject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c7k-lG-sky">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="86N-PH-3kW">
+                                <rect key="frame" x="0.0" y="32" width="414" height="781"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lzR-BL-wZs">
+                                    <size key="itemSize" width="196" height="164"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FeedCell" id="9H4-Kn-RzF" customClass="FeedCollectionViewCell" customModule="Eindproject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="196" height="164"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rX1-Hj-gY9">
+                                            <rect key="frame" x="0.0" y="0.0" width="196" height="164"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5D6-ya-I1d">
+                                                    <rect key="frame" x="0.0" y="0.0" width="196" height="127"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Hier komt de post" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0GD-tI-QaJ">
+                                                    <rect key="frame" x="0.0" y="128" width="196" height="36"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="150" id="AFj-Dj-GHc"/>
+                                                        <constraint firstAttribute="height" constant="36" id="IlB-F0-52Z"/>
+                                                    </constraints>
+                                                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="0GD-tI-QaJ" secondAttribute="trailing" constant="20" symbolic="YES" id="2xa-ix-Mfk"/>
+                                                <constraint firstItem="0GD-tI-QaJ" firstAttribute="top" secondItem="5D6-ya-I1d" secondAttribute="bottom" constant="1" id="4ee-pf-L0F"/>
+                                                <constraint firstItem="5D6-ya-I1d" firstAttribute="top" secondItem="rX1-Hj-gY9" secondAttribute="top" constant="20" symbolic="YES" id="Azi-5s-ojQ"/>
+                                                <constraint firstItem="5D6-ya-I1d" firstAttribute="leading" secondItem="rX1-Hj-gY9" secondAttribute="leading" constant="20" symbolic="YES" id="UuK-uU-nQz"/>
+                                                <constraint firstAttribute="bottom" secondItem="0GD-tI-QaJ" secondAttribute="bottom" constant="20" symbolic="YES" id="Wpa-wE-hGA"/>
+                                                <constraint firstAttribute="trailing" secondItem="5D6-ya-I1d" secondAttribute="trailing" constant="20" symbolic="YES" id="Xnb-Dn-xDY"/>
+                                                <constraint firstItem="0GD-tI-QaJ" firstAttribute="leading" secondItem="rX1-Hj-gY9" secondAttribute="leading" constant="20" symbolic="YES" id="Zsx-Fx-LwF"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="196" height="164"/>
+                                        <connections>
+                                            <outlet property="imageVW" destination="5D6-ya-I1d" id="UmV-A7-X0z"/>
+                                            <outlet property="titleVW" destination="0GD-tI-QaJ" id="teJ-aV-fku"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="DUO-4t-G9b" id="5vc-Ac-5bv"/>
+                                    <outlet property="delegate" destination="DUO-4t-G9b" id="Rmn-tC-AGh"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="KWo-Gl-m31"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Feed" image="book" catalog="system" selectedImage="book" id="DD4-eE-ZZs"/>
+                    <connections>
+                        <outlet property="collectionVw" destination="86N-PH-3kW" id="FmA-k8-S6N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tbs-FM-Tn9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="625.44642857142856"/>
+        </scene>
         <!--Map-->
         <scene sceneID="dUG-Qq-tct">
             <objects>
@@ -245,12 +317,14 @@
                             </segmentedControl>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cbo-c7-z0N">
                                 <rect key="frame" x="0.0" y="35" width="414" height="44"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <navigationItem title="Map" id="VkU-zz-JLs"/>
                                 </items>
                             </navigationBar>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wNP-0I-gnQ" firstAttribute="bottom" secondItem="Scm-zy-pib" secondAttribute="bottom" id="0Ad-IH-r4t"/>
                             <constraint firstItem="Cbo-c7-z0N" firstAttribute="trailing" secondItem="Scm-zy-pib" secondAttribute="trailing" id="0SR-Tf-QQ0"/>
@@ -282,12 +356,14 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EUA-xL-B7E">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="q7j-HG-81G" kind="relationship" relationship="viewControllers" id="Zsm-R1-vzs"/>
                         <segue destination="hFe-pV-SRD" kind="relationship" relationship="viewControllers" id="NLl-JU-7QF"/>
                         <segue destination="arI-wK-wRe" kind="relationship" relationship="viewControllers" id="lBX-Q5-1eI"/>
+                        <segue destination="DUO-4t-G9b" kind="relationship" relationship="viewControllers" id="Mii-5C-LVm"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LJw-BO-LVO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -296,6 +372,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="book" catalog="system" width="64" height="50"/>
         <image name="info.circle" catalog="system" width="64" height="60"/>
         <image name="magnifyingglass" catalog="system" width="64" height="56"/>
         <image name="music.mic" catalog="system" width="64" height="58"/>
