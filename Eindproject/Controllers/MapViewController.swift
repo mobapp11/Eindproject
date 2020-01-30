@@ -20,7 +20,7 @@ class MapViewController: UIViewController {
         // Do any additional setup after loading the view.
         data = DatasourceMap.init()
         mapview.addAnnotations(data!.items)
-        let start = MKCoordinateRegion.init(center: CLLocationCoordinate2D(latitude: 51.124, longitude: 2.75), latitudinalMeters: 1000, longitudinalMeters: 800 )
+        let start = MKCoordinateRegion.init(center: CLLocationCoordinate2D(latitude: 51.126, longitude: 2.75), latitudinalMeters: 1000, longitudinalMeters: 800 )
         mapview.region = start
         
     }
