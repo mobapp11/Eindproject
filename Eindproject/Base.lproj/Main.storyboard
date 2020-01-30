@@ -23,12 +23,17 @@
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gAc-cO-tao">
-                                <rect key="frame" x="0.0" y="80" width="414" height="722"/>
+                                <rect key="frame" x="0.0" y="80" width="414" height="733"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" id="yZn-SD-bli">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="75" id="MLv-ju-Ria" customClass="TableViewCell" customModule="Eindproject" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="75"/>
+                                        <rect key="frame" x="0.0" y="72" width="414" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MLv-ju-Ria" id="YRm-pM-blD">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
@@ -40,30 +45,28 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Lh-CM-HAT">
-                                                    <rect key="frame" x="193" y="43" width="130" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Lh-CM-HAT">
+                                                    <rect key="frame" x="225" y="43" width="38" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Podium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y00-kA-CBQ">
-                                                    <rect key="frame" x="193" y="10" width="130" height="21"/>
+                                                    <rect key="frame" x="225" y="10" width="98" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="y00-kA-CBQ" firstAttribute="leading" secondItem="svK-15-wD1" secondAttribute="trailing" constant="48" id="GU8-Cm-Pf0"/>
                                                 <constraint firstAttribute="bottom" secondItem="8Lh-CM-HAT" secondAttribute="bottom" constant="11" id="JSb-t7-z99"/>
-                                                <constraint firstAttribute="trailing" secondItem="8Lh-CM-HAT" secondAttribute="trailing" constant="91" id="M71-tn-GKr"/>
                                                 <constraint firstItem="svK-15-wD1" firstAttribute="leading" secondItem="YRm-pM-blD" secondAttribute="leading" constant="25" id="Ncu-ta-htC"/>
                                                 <constraint firstItem="y00-kA-CBQ" firstAttribute="top" secondItem="YRm-pM-blD" secondAttribute="top" constant="11" id="PoZ-CN-bpC"/>
+                                                <constraint firstItem="8Lh-CM-HAT" firstAttribute="leading" secondItem="YRm-pM-blD" secondAttribute="leading" constant="225" id="ZGU-TW-Gxa"/>
                                                 <constraint firstAttribute="bottom" secondItem="svK-15-wD1" secondAttribute="bottom" constant="11" id="cNd-uM-Rah"/>
                                                 <constraint firstItem="svK-15-wD1" firstAttribute="top" secondItem="YRm-pM-blD" secondAttribute="top" constant="11" id="rj4-gW-zC9"/>
+                                                <constraint firstItem="y00-kA-CBQ" firstAttribute="leading" secondItem="YRm-pM-blD" secondAttribute="leading" constant="225" id="uFB-S4-drZ"/>
                                                 <constraint firstItem="8Lh-CM-HAT" firstAttribute="top" secondItem="y00-kA-CBQ" secondAttribute="bottom" constant="11" id="vd9-Iu-E4s"/>
-                                                <constraint firstItem="8Lh-CM-HAT" firstAttribute="leading" secondItem="svK-15-wD1" secondAttribute="trailing" constant="48" id="wzH-BI-44p"/>
-                                                <constraint firstAttribute="trailing" secondItem="y00-kA-CBQ" secondAttribute="trailing" constant="91" id="x3Q-1p-3Wq"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -100,45 +103,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Podium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xq0-Fb-neE">
-                                <rect key="frame" x="186" y="90" width="58" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Podium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xq0-Fb-neE">
+                                <rect key="frame" x="60" y="186" width="87" height="42"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cN0-bq-CFw">
+                                <rect key="frame" x="171.5" y="133" width="71.5" height="33.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G31-j0-rXj">
+                                <rect key="frame" x="290.5" y="186" width="62.5" height="42"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="seX-zm-uoR">
+                                <rect key="frame" x="26" y="241" width="24.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cN0-bq-CFw">
-                                <rect key="frame" x="186" y="37" width="45" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G31-j0-rXj">
-                                <rect key="frame" x="186" y="148" width="42" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fiD-SN-2vo">
-                                <rect key="frame" x="20" y="235" width="374" height="537"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fiD-SN-2vo">
+                                <rect key="frame" x="20" y="276" width="374" height="490"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="seX-zm-uoR">
-                                <rect key="frame" x="20" y="200" width="25" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="02R-Lq-pLh" firstAttribute="trailing" secondItem="fiD-SN-2vo" secondAttribute="trailing" constant="20" id="1AX-cd-kFs"/>
+                            <constraint firstItem="02R-Lq-pLh" firstAttribute="trailing" secondItem="G31-j0-rXj" secondAttribute="trailing" constant="61" id="2xs-5q-GLe"/>
+                            <constraint firstItem="fiD-SN-2vo" firstAttribute="leading" secondItem="02R-Lq-pLh" secondAttribute="leading" constant="20" id="3sR-vz-iQN"/>
+                            <constraint firstItem="seX-zm-uoR" firstAttribute="leading" secondItem="02R-Lq-pLh" secondAttribute="leading" constant="26" id="HtE-2C-jJP"/>
+                            <constraint firstItem="Xq0-Fb-neE" firstAttribute="top" secondItem="cN0-bq-CFw" secondAttribute="bottom" constant="19.5" id="I6q-hB-GVm"/>
+                            <constraint firstItem="G31-j0-rXj" firstAttribute="top" secondItem="cN0-bq-CFw" secondAttribute="bottom" constant="19.5" id="IRp-bg-BeP"/>
+                            <constraint firstItem="cN0-bq-CFw" firstAttribute="top" secondItem="02R-Lq-pLh" secondAttribute="top" constant="45" id="Imk-DD-pmR"/>
+                            <constraint firstItem="seX-zm-uoR" firstAttribute="top" secondItem="02R-Lq-pLh" secondAttribute="top" constant="153" id="Xap-sj-yBK"/>
+                            <constraint firstItem="Xq0-Fb-neE" firstAttribute="leading" secondItem="02R-Lq-pLh" secondAttribute="leading" constant="60" id="e1l-Dd-gsC"/>
+                            <constraint firstItem="fiD-SN-2vo" firstAttribute="top" secondItem="seX-zm-uoR" secondAttribute="bottom" constant="14" id="jQa-sA-MUS"/>
+                            <constraint firstItem="cN0-bq-CFw" firstAttribute="centerX" secondItem="B9r-J4-Fg7" secondAttribute="centerX" id="sBf-oM-qcn"/>
+                            <constraint firstItem="02R-Lq-pLh" firstAttribute="bottom" secondItem="fiD-SN-2vo" secondAttribute="bottom" constant="47" id="yhf-Wk-wED"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="02R-Lq-pLh"/>
                     </view>
                     <navigationItem key="navigationItem" id="F6i-oS-3j8"/>
@@ -151,7 +163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1VE-XD-YEO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3233" y="-350"/>
+            <point key="canvasLocation" x="3231.884057971015" y="-350.22321428571428"/>
         </scene>
         <!--Artists-->
         <scene sceneID="Q6S-qN-5L4">
@@ -185,9 +197,8 @@
                                     <navigationItem title="About Us" id="meU-Un-i2f"/>
                                 </items>
                             </navigationBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LIl-Tb-0nr">
-                                <rect key="frame" x="20" y="76" width="374" height="737"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LIl-Tb-0nr">
+                                <rect key="frame" x="20" y="126" width="374" height="444"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -196,6 +207,12 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sOQ-tE-9UV" firstAttribute="trailing" secondItem="LIl-Tb-0nr" secondAttribute="trailing" constant="20" id="UQd-5d-tDG"/>
+                            <constraint firstItem="LIl-Tb-0nr" firstAttribute="top" secondItem="sOQ-tE-9UV" secondAttribute="top" constant="82" id="ZXq-8h-KoS"/>
+                            <constraint firstItem="LIl-Tb-0nr" firstAttribute="leading" secondItem="sOQ-tE-9UV" secondAttribute="leading" constant="20" id="sQW-pH-5t9"/>
+                            <constraint firstItem="sOQ-tE-9UV" firstAttribute="bottom" secondItem="LIl-Tb-0nr" secondAttribute="bottom" constant="243" id="tdN-LA-QuH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="sOQ-tE-9UV"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="About us" image="info.circle" catalog="system" selectedImage="info.circle" id="Mml-xd-3u6"/>
