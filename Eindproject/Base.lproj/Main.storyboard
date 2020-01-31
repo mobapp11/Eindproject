@@ -193,30 +193,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RVh-yy-jjm">
-                                <rect key="frame" x="0.0" y="32" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LIl-Tb-0nr">
+                                <rect key="frame" x="20" y="362" width="374" height="444"/>
+                                <color key="backgroundColor" red="1" green="0.67760192190000001" blue="0.62113674929999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="444" id="OkS-Y2-yE0"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="anthony-delanoix-hzgs56Ze49s-unsplash.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="pbM-c9-Klr">
+                                <rect key="frame" x="0.0" y="88" width="414" height="182"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="182" id="KD3-OA-BDD"/>
+                                    <constraint firstAttribute="width" constant="414" id="r9Y-HV-7ix"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vistival" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RXn-Sj-KyD">
+                                <rect key="frame" x="154.5" y="303" width="105" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RVh-yy-jjm">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <color key="backgroundColor" red="1" green="0.67760192190000001" blue="0.62113674929999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="barTintColor" red="1" green="0.67760192190000001" blue="0.62113674929999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <navigationItem title="About Us" id="meU-Un-i2f"/>
                                 </items>
                             </navigationBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LIl-Tb-0nr">
-                                <rect key="frame" x="20" y="126" width="374" height="444"/>
-                                <color key="backgroundColor" red="1" green="0.67760192190000001" blue="0.62113674929999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.67760192190000001" blue="0.62113674929999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="sOQ-tE-9UV" firstAttribute="trailing" secondItem="LIl-Tb-0nr" secondAttribute="trailing" constant="20" id="UQd-5d-tDG"/>
-                            <constraint firstItem="LIl-Tb-0nr" firstAttribute="top" secondItem="sOQ-tE-9UV" secondAttribute="top" constant="82" id="ZXq-8h-KoS"/>
-                            <constraint firstItem="LIl-Tb-0nr" firstAttribute="leading" secondItem="sOQ-tE-9UV" secondAttribute="leading" constant="20" id="sQW-pH-5t9"/>
-                            <constraint firstItem="sOQ-tE-9UV" firstAttribute="bottom" secondItem="LIl-Tb-0nr" secondAttribute="bottom" constant="243" id="tdN-LA-QuH"/>
+                            <constraint firstItem="RVh-yy-jjm" firstAttribute="top" secondItem="taS-Aq-riZ" secondAttribute="topMargin" id="2RB-Uk-Rsx"/>
+                            <constraint firstItem="pbM-c9-Klr" firstAttribute="leading" secondItem="sOQ-tE-9UV" secondAttribute="leading" id="4Ua-E3-V21"/>
+                            <constraint firstItem="LIl-Tb-0nr" firstAttribute="centerX" secondItem="taS-Aq-riZ" secondAttribute="centerX" id="ATY-H8-2zc"/>
+                            <constraint firstItem="LIl-Tb-0nr" firstAttribute="centerX" secondItem="taS-Aq-riZ" secondAttribute="centerX" id="GA1-0U-nqZ"/>
+                            <constraint firstItem="LIl-Tb-0nr" firstAttribute="leading" secondItem="sOQ-tE-9UV" secondAttribute="leading" constant="20" id="Pnh-pK-RoZ"/>
+                            <constraint firstItem="pbM-c9-Klr" firstAttribute="top" secondItem="RVh-yy-jjm" secondAttribute="bottom" id="QLF-V0-XND"/>
+                            <constraint firstItem="pbM-c9-Klr" firstAttribute="trailing" secondItem="sOQ-tE-9UV" secondAttribute="trailing" id="bdZ-zm-aOV"/>
+                            <constraint firstItem="RVh-yy-jjm" firstAttribute="trailing" secondItem="pbM-c9-Klr" secondAttribute="trailing" id="kGD-ga-iVK"/>
+                            <constraint firstItem="RVh-yy-jjm" firstAttribute="leading" secondItem="pbM-c9-Klr" secondAttribute="leading" id="kIO-AL-zxV"/>
+                            <constraint firstItem="RXn-Sj-KyD" firstAttribute="centerX" secondItem="taS-Aq-riZ" secondAttribute="centerX" id="p9V-l8-u7F"/>
+                            <constraint firstItem="RXn-Sj-KyD" firstAttribute="top" secondItem="pbM-c9-Klr" secondAttribute="bottom" constant="33" id="qVi-a1-2e6"/>
+                            <constraint firstItem="LIl-Tb-0nr" firstAttribute="top" secondItem="RXn-Sj-KyD" secondAttribute="bottom" constant="18" id="web-wX-42s"/>
+                            <constraint firstItem="sOQ-tE-9UV" firstAttribute="trailing" secondItem="LIl-Tb-0nr" secondAttribute="trailing" constant="20" id="wyt-ZK-zAh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sOQ-tE-9UV"/>
                     </view>
@@ -397,6 +421,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="anthony-delanoix-hzgs56Ze49s-unsplash.jpg" width="5616" height="3744"/>
         <image name="book" catalog="system" width="64" height="50"/>
         <image name="info.circle" catalog="system" width="64" height="60"/>
         <image name="magnifyingglass" catalog="system" width="64" height="56"/>
