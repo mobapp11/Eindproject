@@ -19,6 +19,11 @@
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aqp-E1-ebF">
                                 <rect key="frame" x="0.0" y="36" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textAttributes key="largeTitleTextAttributes">
+                                    <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="textShadowColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="Artists" id="oG0-F0-lug"/>
                                 </items>
@@ -37,7 +42,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svK-15-wD1">
                                                     <rect key="frame" x="25" y="11" width="120" height="53"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="22"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -78,7 +83,8 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Artists" image="music.mic" catalog="system" selectedImage="music.mic" id="bVM-3z-BvV" userLabel="Artists"/>
@@ -169,6 +175,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fi3-3U-wVS">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.67760192190000001" blue="0.62113674929999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="WzV-sh-Orz"/>
@@ -189,20 +196,22 @@
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RVh-yy-jjm">
                                 <rect key="frame" x="0.0" y="32" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.67760192190000001" blue="0.62113674929999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="1" green="0.67760192190000001" blue="0.62113674929999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <navigationItem title="About Us" id="meU-Un-i2f"/>
                                 </items>
                             </navigationBar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LIl-Tb-0nr">
                                 <rect key="frame" x="20" y="126" width="374" height="444"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" red="1" green="0.67760192190000001" blue="0.62113674929999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="1" green="0.67760192190000001" blue="0.62113674929999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="sOQ-tE-9UV" firstAttribute="trailing" secondItem="LIl-Tb-0nr" secondAttribute="trailing" constant="20" id="UQd-5d-tDG"/>
                             <constraint firstItem="LIl-Tb-0nr" firstAttribute="top" secondItem="sOQ-tE-9UV" secondAttribute="top" constant="82" id="ZXq-8h-KoS"/>
@@ -226,9 +235,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="86N-PH-3kW">
-                                <rect key="frame" x="0.0" y="32" width="414" height="781"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="86N-PH-3kW">
+                                <rect key="frame" x="0.0" y="84" width="414" height="729"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lzR-BL-wZs">
                                     <size key="itemSize" width="196" height="164"/>
@@ -245,14 +253,17 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5D6-ya-I1d">
-                                                    <rect key="frame" x="0.0" y="0.0" width="196" height="127"/>
+                                                    <rect key="frame" x="20" y="20" width="156" height="83"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="83" id="DoX-qc-jhF"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Hier komt de post" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0GD-tI-QaJ">
-                                                    <rect key="frame" x="0.0" y="128" width="196" height="36"/>
+                                                    <rect key="frame" x="20" y="104" width="156" height="40"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="150" id="AFj-Dj-GHc"/>
-                                                        <constraint firstAttribute="height" constant="36" id="IlB-F0-52Z"/>
+                                                        <constraint firstAttribute="width" constant="120" id="AFj-Dj-GHc"/>
+                                                        <constraint firstAttribute="height" constant="40" id="IlB-F0-52Z"/>
                                                     </constraints>
                                                     <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -281,8 +292,22 @@
                                     <outlet property="delegate" destination="DUO-4t-G9b" id="Rmn-tC-AGh"/>
                                 </connections>
                             </collectionView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TEc-1f-6VR">
+                                <rect key="frame" x="0.0" y="32" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="1" green="0.67760192190000001" blue="0.62113674929999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem title="Feed" id="bpy-c4-Zi8"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="1" green="0.67760192190000001" blue="0.62113674929999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="86N-PH-3kW" firstAttribute="top" secondItem="KWo-Gl-m31" secondAttribute="top" constant="40" id="5KO-sp-0Ko"/>
+                            <constraint firstItem="86N-PH-3kW" firstAttribute="leading" secondItem="KWo-Gl-m31" secondAttribute="leading" id="7t7-FZ-GJR"/>
+                            <constraint firstItem="86N-PH-3kW" firstAttribute="bottom" secondItem="KWo-Gl-m31" secondAttribute="bottom" id="PXl-Hh-KZ3"/>
+                            <constraint firstItem="86N-PH-3kW" firstAttribute="trailing" secondItem="KWo-Gl-m31" secondAttribute="trailing" id="g8l-Cs-Sos"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="KWo-Gl-m31"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Feed" image="book" catalog="system" selectedImage="book" id="DD4-eE-ZZs"/>
@@ -303,10 +328,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wNP-0I-gnQ">
-                                <rect key="frame" x="0.0" y="79" width="414" height="734"/>
+                                <rect key="frame" x="0.0" y="93" width="414" height="720"/>
                             </mapView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Nq3-57-I16">
-                                <rect key="frame" x="84" y="93" width="246" height="32"/>
+                                <rect key="frame" x="84" y="109" width="246" height="32"/>
                                 <segments>
                                     <segment title="Standard"/>
                                     <segment title="Sattelite"/>
@@ -316,25 +341,25 @@
                                 </connections>
                             </segmentedControl>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cbo-c7-z0N">
-                                <rect key="frame" x="0.0" y="35" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="49" width="414" height="44"/>
                                 <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="barTintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="1" green="0.67760192190000001" blue="0.62113674929999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <navigationItem title="Map" id="VkU-zz-JLs"/>
                                 </items>
                             </navigationBar>
                         </subviews>
-                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.67760192190000001" blue="0.62113674929999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wNP-0I-gnQ" firstAttribute="bottom" secondItem="Scm-zy-pib" secondAttribute="bottom" id="0Ad-IH-r4t"/>
                             <constraint firstItem="Cbo-c7-z0N" firstAttribute="trailing" secondItem="Scm-zy-pib" secondAttribute="trailing" id="0SR-Tf-QQ0"/>
                             <constraint firstItem="wNP-0I-gnQ" firstAttribute="leading" secondItem="Scm-zy-pib" secondAttribute="leading" id="DMg-6o-NZY"/>
                             <constraint firstItem="Nq3-57-I16" firstAttribute="leading" secondItem="Scm-zy-pib" secondAttribute="leading" constant="84" id="ELp-a8-C4v"/>
                             <constraint firstItem="wNP-0I-gnQ" firstAttribute="top" secondItem="Cbo-c7-z0N" secondAttribute="bottom" symbolic="YES" id="FHA-D9-sEb"/>
-                            <constraint firstItem="Nq3-57-I16" firstAttribute="top" secondItem="Cbo-c7-z0N" secondAttribute="bottom" constant="14" id="Fg5-Th-C5x"/>
                             <constraint firstItem="wNP-0I-gnQ" firstAttribute="trailing" secondItem="Scm-zy-pib" secondAttribute="trailing" id="HuF-j0-BrF"/>
                             <constraint firstItem="wNP-0I-gnQ" firstAttribute="top" secondItem="Cbo-c7-z0N" secondAttribute="bottom" symbolic="YES" id="Rw3-uy-9Me"/>
-                            <constraint firstItem="Scm-zy-pib" firstAttribute="top" secondItem="Cbo-c7-z0N" secondAttribute="top" constant="9" id="n7D-Lm-Qgr"/>
+                            <constraint firstItem="Cbo-c7-z0N" firstAttribute="top" secondItem="Scm-zy-pib" secondAttribute="top" constant="5" id="Tik-eK-BJf"/>
+                            <constraint firstItem="wNP-0I-gnQ" firstAttribute="top" secondItem="Nq3-57-I16" secondAttribute="bottom" constant="-47" id="duR-G9-ehO"/>
                             <constraint firstItem="Cbo-c7-z0N" firstAttribute="leading" secondItem="Scm-zy-pib" secondAttribute="leading" id="nsh-ts-Zfq"/>
                             <constraint firstItem="Scm-zy-pib" firstAttribute="trailing" secondItem="Nq3-57-I16" secondAttribute="trailing" constant="84" id="vbL-j4-ZAU"/>
                         </constraints>
@@ -356,14 +381,14 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EUA-xL-B7E">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="1" green="0.67760192189393709" blue="0.62113674927796292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <segue destination="DUO-4t-G9b" kind="relationship" relationship="viewControllers" id="Mii-5C-LVm"/>
                         <segue destination="q7j-HG-81G" kind="relationship" relationship="viewControllers" id="Zsm-R1-vzs"/>
                         <segue destination="hFe-pV-SRD" kind="relationship" relationship="viewControllers" id="NLl-JU-7QF"/>
                         <segue destination="arI-wK-wRe" kind="relationship" relationship="viewControllers" id="lBX-Q5-1eI"/>
-                        <segue destination="DUO-4t-G9b" kind="relationship" relationship="viewControllers" id="Mii-5C-LVm"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LJw-BO-LVO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
