@@ -15,7 +15,7 @@ class DatasourceFeed {
     init() {
         posts = [Feed]()
         
-        let post1 = Feed.init(image: "vis", title: "New artist confirmed!")
+        let post1 = Feed.init(image: "vis", title: "Billie EilFish confirmed!!")
             posts.append(post1)
         let post2 = Feed.init(image: "jason-blackeye-IShAuJTJIE4-unsplash.jpg", title: "Only a few tickets left!!")
             posts.append(post2)
