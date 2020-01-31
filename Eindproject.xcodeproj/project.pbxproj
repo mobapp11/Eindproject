@@ -13,6 +13,8 @@
 		394E872523E430FE00B911E2 /* anthony-delanoix-hzgs56Ze49s-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 394E872423E430FE00B911E2 /* anthony-delanoix-hzgs56Ze49s-unsplash.jpg */; };
 		394E872723E4380E00B911E2 /* ron-smith-tknOyEefp2k-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 394E872623E4380E00B911E2 /* ron-smith-tknOyEefp2k-unsplash.jpg */; };
 		394E872923E4381E00B911E2 /* pawel-janiak-xl4rP5WCekY-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 394E872823E4381E00B911E2 /* pawel-janiak-xl4rP5WCekY-unsplash.jpg */; };
+		394E872B23E441D100B911E2 /* eric-ward-uD0W-swVGgE-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 394E872A23E441D000B911E2 /* eric-ward-uD0W-swVGgE-unsplash.jpg */; };
+		394E872D23E441ED00B911E2 /* jade-masri-74tlEYKgrBE-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 394E872C23E441ED00B911E2 /* jade-masri-74tlEYKgrBE-unsplash.jpg */; };
 		3954F4F123E30EFF005B5616 /* DatasourceFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3954F4F023E30EFF005B5616 /* DatasourceFeed.swift */; };
 		3954F4F323E30F38005B5616 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3954F4F223E30F38005B5616 /* Feed.swift */; };
 		3954F4F823E31995005B5616 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3954F4F723E31995005B5616 /* FeedViewController.swift */; };
@@ -39,6 +41,8 @@
 		394E872423E430FE00B911E2 /* anthony-delanoix-hzgs56Ze49s-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "anthony-delanoix-hzgs56Ze49s-unsplash.jpg"; sourceTree = "<group>"; };
 		394E872623E4380E00B911E2 /* ron-smith-tknOyEefp2k-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ron-smith-tknOyEefp2k-unsplash.jpg"; sourceTree = "<group>"; };
 		394E872823E4381E00B911E2 /* pawel-janiak-xl4rP5WCekY-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pawel-janiak-xl4rP5WCekY-unsplash.jpg"; sourceTree = "<group>"; };
+		394E872A23E441D000B911E2 /* eric-ward-uD0W-swVGgE-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "eric-ward-uD0W-swVGgE-unsplash.jpg"; sourceTree = "<group>"; };
+		394E872C23E441ED00B911E2 /* jade-masri-74tlEYKgrBE-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jade-masri-74tlEYKgrBE-unsplash.jpg"; sourceTree = "<group>"; };
 		3954F4F023E30EFF005B5616 /* DatasourceFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasourceFeed.swift; sourceTree = "<group>"; };
 		3954F4F223E30F38005B5616 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		3954F4F623E3177A005B5616 /* vis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vis.jpg; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				394E872823E4381E00B911E2 /* pawel-janiak-xl4rP5WCekY-unsplash.jpg */,
+				394E872A23E441D000B911E2 /* eric-ward-uD0W-swVGgE-unsplash.jpg */,
+				394E872C23E441ED00B911E2 /* jade-masri-74tlEYKgrBE-unsplash.jpg */,
 				394E872623E4380E00B911E2 /* ron-smith-tknOyEefp2k-unsplash.jpg */,
 				3954F4F623E3177A005B5616 /* vis.jpg */,
 				394E872423E430FE00B911E2 /* anthony-delanoix-hzgs56Ze49s-unsplash.jpg */,
@@ -194,11 +200,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				394E872D23E441ED00B911E2 /* jade-masri-74tlEYKgrBE-unsplash.jpg in Resources */,
 				394E872523E430FE00B911E2 /* anthony-delanoix-hzgs56Ze49s-unsplash.jpg in Resources */,
 				39E5CC3223E179D2001B9623 /* LaunchScreen.storyboard in Resources */,
 				394E872123E41FFE00B911E2 /* kal-visuals-A-n_oAqIrOA-unsplash.jpg in Resources */,
 				39E5CC2F23E179D2001B9623 /* Assets.xcassets in Resources */,
 				394E872723E4380E00B911E2 /* ron-smith-tknOyEefp2k-unsplash.jpg in Resources */,
+				394E872B23E441D100B911E2 /* eric-ward-uD0W-swVGgE-unsplash.jpg in Resources */,
 				394E871F23E41F3E00B911E2 /* jason-blackeye-IShAuJTJIE4-unsplash.jpg in Resources */,
 				39E5CC2D23E179D0001B9623 /* Main.storyboard in Resources */,
 				394E872323E4223400B911E2 /* sarthak-navjivan-iTZOPe7BpTM-unsplash.jpg in Resources */,

@@ -15,7 +15,7 @@ class FeedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let width = (view.frame.width-20)/2
+        let width = (view.frame.width-20)
         let layout = collectionVw.collectionViewLayout as! UICollectionViewFlowLayout
         layout.itemSize = CGSize(width: width, height: width)
         // Do any additional setup after loading the view.

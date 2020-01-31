@@ -27,5 +27,9 @@ class DatasourceFeed {
             posts.append(post5)
         let post6 = Feed.init(image: "ron-smith-tknOyEefp2k-unsplash.jpg", title: "Only 3 months left until Vistival!")
             posts.append(post6)
+        let post7 = Feed.init(image: "jade-masri-74tlEYKgrBE-unsplash.jpg", title: "Ticket sale has started!")
+            posts.append(post7)
+        let post8 = Feed.init(image: "eric-ward-uD0W-swVGgE-unsplash.jpg", title: "Date for this year is confirmed!")
+            posts.append(post8)
     }
 }
